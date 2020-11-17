@@ -1,0 +1,122 @@
+.contact-btn,
+.quote-btn {
+	color: #fff;
+	padding: 8px 24px;
+	display: inline-block;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: robotoCondensed-regular, sans-serif;
+}
+.quote-btn {
+	background-color: #222;
+}
+.main-header {
+	padding-bottom: 30px;
+}
+.site-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	padding: 0 35px;
+}
+.primary-menu-wrapper .primary-menu-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.primary-menu-list a {
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+.primary-menu-list li {
+	position: relative;
+}
+.primary-menu-list li a {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 5px 0;
+	margin-left: 30px;
+	transition: 0.2s ease-in-out;
+}
+.primary-menu-list li:first-child a {
+	margin-left: 0;
+}
+.primary-menu-list li a:hover,
+.primary-menu-list li.current_page_item a {
+	color: #f5a01b;
+}
+.current-menu-parent a {
+	color: #f5a01b !important;
+}
+.primary-menu-list li.mobile-only {
+	display: none;
+}
+.primary-menu-list .sub-menu {
+	position: absolute;
+	white-space: nowrap;
+	z-index: 1;
+	left: -99999em;
+}
+.primary-menu-list > li:hover > .sub-menu {
+	background-color: #6a6d75;
+	left: auto;
+	min-width: 100%;
+}
+.sub-menu {
+	list-style: none;
+	padding: 0;
+	width: 200px;
+	margin: 0;
+	border-radius: 3px;
+	margin-left: 30px;
+}
+.sub-menu li {
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+.sub-menu li:last-child {
+	border: none;
+}
+.sub-menu li a {
+	color: #fff !important;
+	text-align: left;
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 13px;
+	text-transform: capitalize;
+	font-family: robotoCondensed-light;
+	white-space: normal;
+	margin-left: 0;
+}
+.sub-menu li a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: 0.3s ease-in-out;
+}
+.sub-menu li.current_page_item a,
+.sub-menu li a:hover {
+	border-left: 10px solid #f5a01b;
+	color: #fff;
+}
+@media only screen and (max-width: 768px) {
+	.primary-menu-list .sub-menu {
+		position: static;
+		padding-left: 10px;
+	}
+	.primary-menu-list .sub-menu li a {
+		font-size: 14px;
+	}
+	.primary-menu-list > li:hover > .sub-menu {
+		background-color: transparent;
+	}
+	.sub-menu li.current_page_item a,
+	.sub-menu li a:hover {
+		border: none;
+		color: #222;
+	}
+}
